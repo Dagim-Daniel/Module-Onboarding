@@ -36,6 +36,14 @@ a {
   border: var(--line);
   max-width: fit-content;
 }
+footer a 
+{
+   padding: var(--space);
+   border: none; 
+   text-align: center;
+  max-width: fit-content;
+
+}
 img,
 svg {
   width: 100%;
@@ -45,6 +53,10 @@ svg {
 Setting the overall rules for page regions
 https://www.w3.org/WAI/tutorials/page-structure/regions/
 */
+header {  
+  text-align: center; 
+  padding: var(--space); 
+}
 main {
   max-width: var(--container);
   margin: 0 auto calc(var(--space) * 4) auto;
@@ -53,6 +65,8 @@ footer {
   position: fixed;
   bottom: 0;
   text-align: center;
+  background-color: blanchedalmond;
+  width:100%;
 }
 /* ====== Articles Grid Layout ====
 Setting the rules for how articles are placed in the main element.

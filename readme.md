@@ -2,7 +2,7 @@
 
 ## 🔑 Do the prep
 
-Before you try to complete the work in this repo, go to your curriculum and work through the prep. The prep shows you how to complete the work in this repo. Start with the prep first.
+Before you try to complete the work in this repo, go to your curriculum and work through the prep. The prep shows you how to complete the work in this repo. Start with the prep.
 
 Your workflow should always be:
 

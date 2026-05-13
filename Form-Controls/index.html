@@ -1,11 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
     <title>My form exercise</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" >
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
+    <link rel="stylesheet" href="style.css" >
   </head>
   <body>
     <header>
@@ -13,15 +14,63 @@
     </header>
     <main>
       <form>
-        <!-- write your html here-->
+        <p>please enter the required (*) information to order your T-shirt.</p>
+        <fieldset>
+          <legend>Customer Information</legend>
+          <label for="name">Name:*</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            pattern="[A-Za-z\s]{2,50}"
+          >
+          <br >
+          <p>
+            Please enter a valid name (2-50 characters, letters and spaces
+            only).
+          </p>
+          <br >
+          <label for="email">Email:*</label>
+          <input type="email" id="email" name="email" required >
+        </fieldset>
+
         <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+          customer name, with validation 
+          customer's email
+          - - The upper one customer information - - 
+                      //
+         - -The lower one product information - -
+          colour of T-shire (choose one from 3 option)
+          size of T-shirt (choose one from xs, s, m, l, xl,xxl)-->
+        <fieldset>
+          <legend>Product Information</legend>
+          <label for="colour">Colour:*</label>
+          <select id="colour" name="colour" required>
+            <option value="">--Please choose a colour--</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+          <br >
+          <label for="size">Size:*</label>
+          <select id="size" name="size" required>
+            <option value="">--Please choose a size--</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="xxl">XXL</option>
+          </select>
+        </fieldset>
+        <label for="submit"></label>
+        <input type="submit" id="submit" value="Submit Order" >
       </form>
     </main>
     <footer>
       <!-- change to your name-->
-      <p>By HOMEWORK SOLUTION</p>
+      <p>By Dagim Daniel</p>
     </footer>
   </body>
 </html>
